@@ -1,26 +1,105 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <h1>My First vue App</h1> -->
+  <NavbarItem />
+  <!-- <HomeItem />
+ 
+  <MainItem />
+  <FooterItem /> -->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavbarItem from "./components/NavbarItem.vue";
+// import HomeItem from "./components/HomeItem.vue";
+
+// import FooterItem from "./components/FooterItem.vue";
+// import MainItem from "./components/MainItem.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { NavbarItem },
+};
 </script>
 
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0%, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 35%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: hsl(190, 190, 190);
+  --inputColor: hsl(239, 239, 239);
+  --bodyColor: hsl(240, 240, 246);
+  --cardBG: hsl(255, 255, 235);
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.section {
+  padding: 4rem 0 2rem;
+}
+.container {
+  padding-left: 1.5 rem;
+  padding-right: 1.5 rem;
+}
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+} */
+/* .flex {
+  display: flex;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  align-items: center;
+} */
+.btn {
+  padding: 0rem 1.5rem;
+  background: var(--gradientColor);
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn a {
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+.btn:hover {
+  background: var(--SecondaryColor);
+}
+img {
+  width: 100%;
+  height: auto;
+}
+input {
+  font-size: 100%;
+}
+body {
+  background: var(--bodyColor);
 }
 </style>
